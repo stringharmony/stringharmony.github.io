@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html>
+<head>
+   
+    <title>Guitar Shop</title>
+    <style>
+        body {
+            font-family: 'Pacifico', cursive;
+            margin: 0;
+            padding: 0;
+            background-image: url('https://t4.ftcdn.net/jpg/02/38/20/31/360_F_238203139_aHnKVip8dNgBgAeHk6UArg5zLPxH0gJQ.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        header,
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: #555;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 10px;
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            transition: transform 1.3s ease;
+        }
+
+        .container:hover .welcome-message {
+            color: #ff7f50;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+
+        }
+
+        header {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .social-icons a {
+            margin-right: 5px;
+        }
+
+        .social-icons img {
+            width: 40px;
+            height: 40px;
+        }
+
+        header img {
+            border-radius: 50%;
+            border: 2px solid #fff;
+            max-width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+            margin-left: auto;
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+ .container:hover {
+            transform: scale(1.1);
+
+        }
+        .shell {
+            transition: transform 1s ease-in-out;
+        }
+
+        .fb {
+
+            transition: transform 0.3s ease;
+        }
+
+        .insta {
+
+            transition: transform 0.3s ease;
+        }
+
+        .tik {
+
+            transition: transform 0.3s ease;
+        }
+
+        .shell:hover {
+            transform: rotate(360deg);
+        }
+
+        .fb:hover {
+            transform: scale(1.1);
+
+        }
+
+        .insta:hover {
+            transform: scale(1.1);
+
+        }
+
+        .tik:hover {
+            transform: scale(1.1);
+
+        }
+
+        .login-button {
+            position: fixed;
+            bottom: 10px;
+            left: 26px;
+            background-color: #555;
+            color: #fff;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .login-button:hover {
+            background-color: #777;
+        }
+
+        .create-account-btn {
+            position: fixed;
+            bottom: 60px;
+            left: 12px;
+            background-color: #555;
+            color: #fff;
+            padding: 10px 2px;
+            border-radius: 5px;
+            text-decoration: none;
+            transition: background-color 0.3s ease;
+        }
+
+        .create-account-btn:hover {
+            background-color: #777;
+        }
+    
+
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="social-icons">
+            <div class="social-icons">
+                <a class="fb" href="https://www.facebook.com/jb.genecera.3/"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/470/small/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png" alt="Facebook"></a>
+                <a class="insta" href="https://www.instagram.com/jbegenecera/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUfJUAWOApot06DkUeyr6zkbyPT3HUJqm4Oi2fG3vqae6s8BiICfu0nov5epTM4V1hxg&usqp=CAU" alt="Instagram"></a>
+                <a class="tik" href="https://www.tiktok.com/@jbgenecera"><img src="https://static.vecteezy.com/system/resources/previews/006/057/996/non_2x/tiktok-logo-on-transparent-background-free-vector.jpg" alt="TikTok"></a>
+            </div>
+        </div>
+        <img class="shell" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/433420972_1071286120597472_454672940956472450_n.jpg?stp=dst-jpg_p206x206&amp;_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=gj3UO3bVN-kAX_DVTuW&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AdT6gAx7FIqCwZz_k3lUoy8cP4RissSvzKt_9C-TJITzkA&amp;oe=66224104" alt="Guitar Shop Logo">
+        <h1>String Harmony</h1>
+    </header>
+    <nav>
+        <a href="Home.html">Home</a>
+        <a href="pro.html">Products</a>
+        <a href="check.html">Order</a>
+    </nav>
+
+    <div class="container">
+        <h2 class="welcome-message">Welcome to String Harmony</h2>
+        <p>Welcome to our online guitar store! We have great guitars at low prices, plus all the accessories you need!</p>
+        <p>Check out our best selling guitars at the table and get ready to rock without spending too much.</p>
+
+        <table border="1" style="margin: 20px auto;">
+            <thead>
+                <tr>
+                    <th>Guitar brand name</th>
+                    <th>top #</th>
+                    <th>Price</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Gibson les paul</td>
+                    <td>1</td>
+                    <td>30,523 php</td>
+                </tr>
+                <tr>
+                    <td>Taylor Acoustic Guitar 16ce</td>
+                    <td>2</td>
+                    <td>39,999 php</td>
+                </tr>
+                <tr>
+                    <td>Fender telecaster</td>
+                    <td>3</td>
+                    <td>29,999 php</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <footer>
+        <p>"walang nag simulang magaling sa pag gigitara"</p>
+        <p>2024 Jb Genecera 8-banaba.</p>
+    </footer>
+
+    
+    <a href="login.html" class="login-button">Login</a>
+    <a href="create_account.html" class="create-account-btn">Make Account</a>
+</body>
+</html>

@@ -1,0 +1,325 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    
+    <title>Guitar Shop - Products</title>
+    <style>
+
+        body {
+            font-family: 'Pacifico', cursive;
+
+            margin: 0;
+            padding: 0;
+            background-image: url('https://t4.ftcdn.net/jpg/02/38/20/31/360_F_238203139_aHnKVip8dNgBgAeHk6UArg5zLPxH0gJQ.jpg');
+            background-size: cover;
+            background-position: center;
+            color: #fff;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            position: relative;
+        }
+
+        header,
+        footer {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 20px;
+
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+        nav {
+            background-color: #333;
+            text-align: center;
+            padding: 10px 0;
+        }
+
+        nav a {
+            color: #fff;
+            text-decoration: none;
+            margin: 0 10px;
+            padding: 8px 16px;
+            border-radius: 5px;
+            background-color: #555;
+        }
+
+        nav a:hover {
+            background-color: #777;
+        }
+
+        .container {
+            max-width: 800px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: rgba(0, 0, 0, 0.7);
+            border-radius: 15px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+
+        .product-list {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            margin-top: 20px;
+        }
+
+        .product {
+            width: 30%;
+            margin-bottom: 20px;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            background-color: #333;
+            color: #fff;
+            transition: transform 0.3s ease;
+
+        }
+
+        .product:hover {
+            transform: scale(1.1);
+
+        }
+
+        .fb:hover {
+            transform: scale(1.1);
+
+        }
+
+        .insta:hover {
+            transform: scale(1.1);
+
+        }
+
+        .tik:hover {
+            transform: scale(1.1);
+
+        }
+
+        .shell:hover {
+
+            transform: rotate(360deg);
+
+        }
+
+        .product img {
+            max-width: 100%;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+
+        }
+
+        footer {
+            margin-top: auto;
+        }
+
+        header {
+            background-color: #222;
+            text-align: center;
+            padding: 10px 20px;
+
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+
+        }
+
+ .read-more {
+            color: #fff;
+            text-decoration: none;
+            background-color: #555;
+            padding: 8px 16px;
+            border-radius: 5px;
+            transition: background-color 0.3s ease;
+            display: inline-block;
+        }
+
+        .social-icons a {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+
+        }
+
+        .fb {
+
+            transition: transform 0.3s ease;
+        }
+
+        .insta {
+
+            transition: transform 0.3s ease;
+        }
+
+        .tik {
+
+            transition: transform 0.3s ease;
+        }
+
+        .shell {
+
+            transition: transform 1s ease-in-out;
+        }
+
+        .social-icons a {
+            margin-right: 5px;
+
+        }
+
+        .social-icons img {
+            width: 40px;
+
+            height: 40px;
+        }
+
+        header img {
+            border-radius: 50%;
+            border: 2px solid #fff;
+            max-width: 60px;
+            height: 60px;
+            margin-right: 10px;
+        }
+
+        header h1 {
+            font-size: 24px;
+            margin: 0;
+            margin-left: auto;
+
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+            margin-right: auto;
+
+        }
+            .read-more:hover {
+            background-color: #777;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="social-icons">
+            <div class="social-icons">
+                <a class="fb" href="https://www.facebook.com/jb.genecera.3/"><img src="https://static.vecteezy.com/system/resources/thumbnails/023/986/470/small/facebook-logo-facebook-logo-transparent-facebook-icon-transparent-free-free-png.png" alt="Facebook"></a>
+                <a class="insta" href="https://www.instagram.com/jbegenecera/"><img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTUUfJUAWOApot06DkUeyr6zkbyPT3HUJqm4Oi2fG3vqae6s8BiICfu0nov5epTM4V1hxg&usqp=CAU" alt="Instagram"></a>
+                <a class="tik" href="https://www.tiktok.com/@jbgenecera"><img src="https://static.vecteezy.com/system/resources/previews/006/057/996/non_2x/tiktok-logo-on-transparent-background-free-vector.jpg" alt="TikTok"></a>
+            </div>
+        </div>
+        <img class="shell" src="https://scontent.xx.fbcdn.net/v/t1.15752-9/433420972_1071286120597472_454672940956472450_n.jpg?stp=dst-jpg_p206x206&amp;_nc_cat=101&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=gj3UO3bVN-kAX_DVTuW&amp;_nc_ad=z-m&amp;_nc_cid=0&amp;_nc_ht=scontent.xx&amp;oh=03_AdT6gAx7FIqCwZz_k3lUoy8cP4RissSvzKt_9C-TJITzkA&amp;oe=66224104" alt="Guitar Shop Logo">
+        <h1>String Harmony</h1>
+    </header>
+    <nav>
+        <a href="Index.html">Home</a>
+        <a href="pro.html">Products</a>
+        <a href="check.html">Order</a>
+    </nav>
+    <div class="container">
+        <h1>Guitars</h1>
+        <div class="product-list">
+
+            <div class="product">
+                <img src="https://c4.wallpaperflare.com/wallpaper/509/274/394/gibson-guitars-les-paul-wallpaper-preview.jpg">
+                <h3>Gibson Les Paul</h3>
+                <p>"Les Paul Gibson: Pioneer of the electric guitar, inventor, and musical innovator."</p>
+                <p>Price: 30,523 php</p>
+                <a class="read-more" href="gibson.html">Read More</a>
+            </div>
+
+            <div class="product">
+                <img src="https://wallpapercave.com/wp/kvVDoai.jpg">
+                <h3>Taylor Acoustic Guitar 214ce</h3>
+                <p>"Taylor acoustic guitars: Craftsmanship, innovation, and superior tone."</p>
+                <p>Price: 39,999 php</p>
+                <a class="read-more" href="taylor.html">Read More</a>
+            </div>
+
+            <div class="product">
+                <img src="https://wallpapercave.com/wp/dp1mmfK.jpg">
+                <h3>Fender Telecaster</h3>
+                <p>"The Fender Telecaster: iconic electric guitar with single-cutaway body, two single-coil pickups, and versatile sound."</p>
+                <p>Price: 29,999 php</p>
+                <a class="read-more" href="tele.html.">Read More</a>
+            </div>
+
+            <div class="product">
+                <img src= "https://e1.pxfuel.com/desktop-wallpaper/197/699/desktop-wallpaper-fender-mustang-fender-guitars.jpg">
+                <h3>Fender mustang</h3>
+                <p>"The Fender Mustang: a compact, versatile electric guitar with a sleek offset body, renowned for its comfortable playability and wide range of tones."
+                </p>
+                <p>Price: 44,999 php</p>
+                <a class="read-more" href="mustang.html">Read More</a>
+            </div>
+
+            <div class="product">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRuFy2vEVydB9H6ul-BIKhBBMgwU3bY3aRXFXNRD0e0iA&s">
+                <h3>Martin guitar d-28 </h3>
+                <p>"The Martin Guitar: Renowned for its superb craftsmanship and rich, balanced tones, it's a favorite among musicians worldwide."
+                </p>
+
+                <p>Price: 20,543 php</p>
+                 <a class="read-more" href="mart.html">Read More</a>
+            </div>
+
+            <div class="product">
+                <img src="https://www.talkbass.com/attachments/gearpics049-1-jpg.1987414/">
+                <h3>Fender Player Precision Bass</h3>
+                <p>
+"The Fender Player Precision Bass: Classic design, modern features. Punchy tones, comfortable playability, versatile sound. Ideal for bassists worldwide."</p>
+                <p>Price: 55,000 ph</p>
+                <a class="read-more"  href="bass.html">Read More</a>
+            </div>
+
+        </div>
+    </div>
+    <div class="container">
+        <h1>Guitar accessories</h1>
+        <div class="product-list">
+
+            <div class="product">
+                <img src="https://st3.depositphotos.com/1926889/18976/i/450/depositphotos_189765576-stock-photo-guitar-capo-on-third-fret.jpg">
+                <h3>Guitar capo</h3>
+                <p>A guitar capo is a clamp that changes pitch without retuning, perfect for altering songs or using different tunings. </p>
+                <p>Price: 150 php</p>
+            </div>
+
+            <div class="product">
+                <img src="https://wallpapercave.com/wp/wp7270244.jpg">
+                <h3>Guitar amp</h3>
+                <p>A guitar amp amplifies the sound of an electric guitar, adjusting tone and volume.</p>
+                <p>Price: 5,000 php</p>
+            </div>
+
+            <div class="product">
+                <img src="https://w0.peakpx.com/wallpaper/900/599/HD-wallpaper-the-pick-that-plays-music-fender-gibson-guitar-music.jpg">
+                <h3>Guitar pick</h3>
+                <p>A guitar pick, also known as a plectrum, is a small, flat tool used to pluck or strum the strings of a guitar. </p>
+                <p>Price: 5 php</p>
+            </div>
+ <div class="product">
+                <img src="https://img.kwcdn.com/product/open/2023-11-23/1700731381438-8394d180df19485c92b192fee7a8002d-goods.jpeg?imageView2/2/w/500/q/60/format/webp">
+                <h3>Guitar string</h3>
+                <p>A guitar string is a fundamental component of a guitar that produces sound when plucked, strummed, or picked. </p>
+                <p>Price: 50 php</p>
+            </div>
+
+        </div>
+    </div>
+    </div>
+    <footer>
+        <p>2024 Jb Genecera 8-banaba.</p>
+    </footer>
+
+</body>
+
+</html>
